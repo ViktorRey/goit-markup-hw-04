@@ -34,12 +34,20 @@
                     </li>
                 </ul>
             </nav>
-            <ul class="contact ">
+            <ul class="contact">
                 <li class="link-menu">
-                    <a class="contact-link" href="mailto">info@devstudio.com</a>
+                    <a class="contact-link" href="mailto">
+                        <svg class="mail-icon" width="16" height="12">
+                            <use href="./images/symbol-defs.svg#icon-mail"></use>
+                        </svg>info@devstudio.com
+                    </a>
                 </li>
                 <li class="link-menu">
-                    <a class="contact-link" href="tel+380961111111">+38 096 111 11 11</a>
+                    <a class="contact-link" href="tel+380961111111">
+                        <svg class="smartphone-icon" width="10" height="16">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
                 </li>
             </ul>
         </div>
@@ -50,27 +58,48 @@
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="button" type="button">Заказать услугу</button>
         </section>
+        <!-- section1 -->
         <section class="section">
             <div class="container">
                 <h2 hidden class="title-subject">наши преимущества</h2>
                 <ul class="desc-title">
-                    <li class="link-menu">
+                    <li class="link-menu-card">
+                        <div class="card">
+                            <svg class="card-icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
                         <h3 class="title">Внимание к деталям</h3>
                         <p class="subtitle">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.
                         </p>
                     </li>
-                    <li class="link-menu">
+                    <li class="link-menu-card">
+                        <div class="card">
+                            <svg class="card-icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
                         <h3 class="title">Пунктуальность</h3>
                         <p class="subtitle">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
-                    <li class="link-menu">
+                    <li class="link-menu-card">
+                        <div class="card">
+                            <svg class="card-icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                            </svg>
+                        </div>
                         <h3 class="title">Планирование</h3>
                         <p class="subtitle">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="link-menu">
+                    <li class="link-menu-card">
+                        <div class="card">
+                            <svg class="card-icon" width="70" height="70">
+                                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
                         <h3 class="title">Современные технологии</h3>
                         <p class="subtitle">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
@@ -105,8 +134,29 @@
                         <div class="aside-block-team">
                             <h3 class="team-title">Игорь Демьяненко</h3>
                             <p class="team-text">Product Designer</p>
+                            <ul class="socials-list">
+                                <li class="link-area">
+                                    <svg class="social-link"  width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="link-area">
+                                    <svg class="social-link"  width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="link-area">
+                                    <svg class="social-link"  width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                                <li class="link-area">
+                                    <svg class="social-link"  width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </li>
+                            </ul>
                         </div>
-
                     </li>
                     <li class="section-Information">
                         <img src="./images/img2.jpg" width="270" alt="">
@@ -114,7 +164,6 @@
                             <h3 class="team-title">Ольга Репина</h3>
                             <p class="team-text">Frontend Developer</p>
                         </div>
-
                     </li>
                     <li class="section-Information">
                         <img src="./images/img3.jpg" width="270" alt="">
@@ -133,8 +182,9 @@
 
                     </li>
                 </ul>
+            </div>
         </section>
-        </div>
+        
 
     </main>
     <footer class="hero-background">

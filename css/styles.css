@@ -122,11 +122,24 @@ img {
 
 .link-menu+.link-menu {
     margin-left: 50px;
+}
+
+
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    
+}
+
+.smartphone-icon {
+    margin-right: 10px;
+    fill: currentColor;
 
 }
 
 .contact-link {
-    display: block;
+    align-items: center;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -145,11 +158,23 @@ img {
 
 /* Hero section*/
 
+
 .hero {
     text-align: center;
     background-color: var(--background-secondary);
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url("../images/Img-bgr-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1600px;
+    background-size: cover;
+    height: 600px;
+
 }
 
 .hero-title {
@@ -166,6 +191,7 @@ img {
     color: var(--white-color-hero);
     text-transform: uppercase;
 }
+
 
 .button {
     border-radius: 4px;
@@ -189,10 +215,29 @@ img {
     display: flex;
 }
 
-.desc-title .link-menu+.link-menu {
-    margin-left: 30px;
+
+.link-menu-card {
+    width: 270px;
+}
+
+.card {
+    background-color:var(--color-button);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+
+.link-menu-card:not(:last-child) {
+    margin-right: 30px;
+}
+
+
 
 .title {
     font-size: 14px;
@@ -270,11 +315,28 @@ img {
 }
 
 .team-text {
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     color: var(--color-primary);
 }
+
+
+.socials-list {
+    display: flex;
+}
+
+.link-area {
+    background-color: #2196f3;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 /*footer*/
 
@@ -347,6 +409,7 @@ img {
     margin-left: 8px;
 }
 
+
 .button-active {
     font-family: 'Roboto';
     font-size: 16px;
@@ -361,6 +424,7 @@ img {
     border-radius: 4px;
     padding: 6px 22px;
     text-align: center;
+    
 
 }
 
