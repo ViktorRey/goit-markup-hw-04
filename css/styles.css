@@ -97,7 +97,6 @@ img {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
     color: var(--color-accent);
     font-weight: 500;
     text-decoration: none;
@@ -321,7 +320,6 @@ img {
     color: var(--color-primary);
 }
 
-
 .socials-list {
     display: flex;
     justify-content: center;
@@ -333,29 +331,33 @@ img {
     background-color: #fff;
     height: 40px;
     width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
 }
 
-
-
-.link-area:hover {
+.link-area:hover
+.link-area:focus {
     background-color:var(--color-hover)
+}
+
+.social-linki-team {
+    fill: #afb1b8;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-area:not(:last-child) {
     margin-right: 10px;
     }
 
-.social-link {
-    fill: #afb1b8;
-}
 
-.social-link:hover {
+.social-linki-team:hover {
     fill: #fff;
 }
+
+
 
 
 /* section4 */
@@ -368,14 +370,16 @@ img {
     border: 1px solid #aFb1b8;
     width: 170px;
     height: 92px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
 }
 
-.client-icon {
+.client-link {
     fill: #Afb1b8;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .client-item:not(:last-child) {
@@ -386,7 +390,7 @@ img {
     border-color: var(--color-hover);
 }
 
-.client-icon:hover {
+.client-link:hover {
     fill: var(--color-hover);
 }
 
@@ -395,14 +399,22 @@ img {
 
 /*footer*/
 
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
 .hero-background {
     background-color: var(--background-secondary);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.logo-footer {
+.address {
     display: inline-block;
+}
+
+.logo-footer {
     font-family: 'Raleway';
     color: var(--white-color-hero);
     font-size: 26px;
@@ -413,8 +425,7 @@ img {
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-    box-sizing: border-box;
-    display: inline-block;
+
 }
 
 .footer-menu-item:not(:last-child) {
@@ -430,7 +441,6 @@ img {
 
 
 .footer-menu {
-    display: inline-block;
     margin-bottom: 0;
     margin-top: 20px;
 }
@@ -443,19 +453,16 @@ img {
     line-height: 1.7;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
+
 }
 
 
 .footer-icon {
-    display: inline-block;
     margin-left: 70px;
-
-
-
+    display: inline-block;
 }
 
 .footer-title {
-    margin-top: 0;
     margin-bottom: 20;
     font-family: 'Roboto';
     font-style: normal;
@@ -467,9 +474,6 @@ img {
     color: #FFFFFF;
 }
 
-.socials-list-footer {
-    display: flex;
-}
 
 .link-area-footer {
     background: rgba(255, 255, 255, 0.1);
@@ -481,22 +485,26 @@ img {
     align-items: center;
 }
 
+.social-link-team-footer {
+    fill: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .link-area-footer:not(:last-child) {
     margin-right: 10px;
 }
 
-.link-area-footer:hover {
+.link-area-footer:hover,
+.link-area-footer:focus {
     background-color: var(--color-hover)
 }
 
-.footer-menu-link:hover {
-    color: var(--color-hover);
-}
 
-.social-link-team-footer {
-    fill: #fff;
 
-}
 
 
 
@@ -551,14 +559,21 @@ img {
     margin-bottom: 30px;
     margin-right: 30px;
     width: 370px;
+
 }
 
-.aside-block:hover {
+    
+.card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.card-link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-    
+
 
 .aside-info {
     border-left: 1px solid #eeeeee;
@@ -582,6 +597,8 @@ img {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--color-accent);
+    
 }
 
 .portfolio-text {
