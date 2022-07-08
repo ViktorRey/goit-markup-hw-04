@@ -334,7 +334,7 @@ img {
     border-radius: 50%;
 }
 
-.link-area:hover
+.link-area:hover,
 .link-area:focus {
     background-color:var(--color-hover)
 }
